@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Makes the page responsive on mobile -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Content Security Policy for enhanced security -->
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'none'; style-src 'self' 'unsafe-inline'; img-src 'self' data:; font-src 'self'; object-src 'none';">
+
+    <title>Happy Birthday</title>
+
+    <style>
+
+        /* Reset default margin */
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+
+        /* Center content on screen */
+        body{
+            height:100vh;
+            display:flex;
+            justify-content:center;
+            align-items:center;
+            flex-direction:column;
+
+            font-family:Arial, Helvetica, sans-serif;
+
+            /* Soft birthday background */
+            background: linear-gradient(135deg,#ffecd2,#fcb69f);
+        }
+
+        /* Main birthday message */
+        h1{
+            font-size:6rem;
+            text-align:center;
+            color:#333;
+
+            /* Simple animation */
+            animation: pop 1.5s ease-in-out infinite alternate;
+        }
+
+        /* Friend name style */
+        .name{
+            font-size:3rem;
+            margin-top:10px;
+            color:#444;
+        }
+
+        /* Animation for celebration feel */
+        @keyframes pop{
+            from{
+                transform:scale(1);
+            }
+            to{
+                transform:scale(1.1);
+            }
+        }
+
+        /* Mobile responsive text */
+        @media(max-width:600px){
+            h1{
+                font-size:3rem;
+            }
+
+            .name{
+                font-size:1.5rem;
+            }
+        }
+
+    </style>
+</head>
+
+<body>
+
+    <!-- Main Birthday Message -->
+    <h1>🎉 Happy Birthday 🎂</h1>
+
+    <!-- Friend name placeholder -->
+    <div class="name">Dear Friend</div>
+
+</body>
+
+</html>
